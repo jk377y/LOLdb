@@ -54,8 +54,20 @@ main {
     color: rgb(142, 204, 136);
 }
 
+.homepageDiv {
+    display: flex;
+    justify-content: center;
+}
+.homepageDiv > iframe {
+    border-radius: 30px;
+    box-shadow: 2px 2px 5px 2px;
+    background-color: var(--borderColor);
+}
+
+
 .footer {
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
 }
+
