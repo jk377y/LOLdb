@@ -31,3 +31,4 @@ app.use(routes); // Use the routes we imported earlier with the express server
 sequelize.sync({ force: false }).then(() => {
 	app.listen(PORT, () => console.log(`Server running http://localhost:${PORT}`));
 });
+
