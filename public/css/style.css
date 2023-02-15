@@ -49,10 +49,10 @@ main {
     font-size: 2.5vw;
     margin: 0 2.2vw;
     max-width: 25rem;
-
 }
-
-
+.git:hover {
+    color: rgb(142, 204, 136);
+}
 
 .footer {
     display: flex;
