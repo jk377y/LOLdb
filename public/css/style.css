@@ -28,7 +28,7 @@ body {
     height: 100vh;
     width: 100vw;
     line-height: 1;
-    background-image: url(/public/images/lolBackground.jpg);
+    background-image: url(/images/lolBackground.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -39,7 +39,9 @@ main {
     flex-direction: column;
     justify-content: space-between;
 }
-
+header {
+    height: 10%;
+}
 .titleImage {
     width: 33%;
     max-width: 25rem;
