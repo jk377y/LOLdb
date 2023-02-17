@@ -28,7 +28,7 @@ body {
     height: 100vh;
     width: 100vw;
     line-height: 1;
-    background-image: url(/public/images/lolBackground.jpg);
+    background-image: url(/images/lolBackground.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -45,13 +45,13 @@ main {
     max-width: 25rem;
 }
 .git {
-    color: rgba(142, 204, 136, 0.856);
+    color: rgb(200, 155, 60);
     font-size: 2.5vw;
     margin: 0 2.2vw;
     max-width: 25rem;
 }
 .git:hover {
-    color: rgb(142, 204, 136);
+    color: rgb(200, 170, 110);
 }
 
 .homepageDiv {
@@ -70,4 +70,79 @@ main {
     justify-content: center;
     margin-bottom: 10px;
 }
+
+
+/* css for champions page */
+#allChampions {
+    display: flex;
+    justify-content: center;
+}
+.allChampions {
+    color: white;
+    font-size: 2.5vw;
+}
+/* End of champions page */
+
+
+/* Login page css */
+#flex-container-log {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.forms {
+    margin: 35px;
+    padding: 66px;
+}
+.login-form-background {
+    background-image: url(../images/shyv.jpg);
+    border: 2px solid rgb(200, 155, 60);
+    box-shadow: 10px 5px 5px rgb(200, 170, 110);
+}
+.signup-form-background {
+    background-image: url(../images/diana1.jpg);
+    object-fit: fill;
+    border: 2px solid rgb(200, 155, 60);
+    box-shadow: 10px 5px 5px rgb(200, 170, 110);
+    padding-right: 80px;  
+}
+.login-el {
+    margin-bottom: 10px;
+}
+.signup-el {
+    margin-bottom: 5px;
+  
+}
+.login-title, .signup-title {
+    font-size: 45px;
+    margin-bottom: 13px;
+}
+.forms {
+    border-radius: 6px;
+}
+#or-divider {
+    margin-top: 200px;
+
+}
+#or-caption {
+    color:rgb( 200, 155, 60);
+    font-size: 25px;
+}
+.login-user-pass, .signup-user-pass {
+    font-size: 30px;
+}
+
+.login-btn, .sign-up-btn {
+    padding:10px;
+    border-radius: 12px;
+    border: 2px solid rgb(205, 250, 250);
+    background-color: rgb(200, 155, 60);
+    box-shadow: 10px 5px 5px black;
+    color: rgb(205, 250, 250);
+    font-family: 'Raleway';
+    font-weight: bold;
+}
+
+
+/* End Login page css */
 
