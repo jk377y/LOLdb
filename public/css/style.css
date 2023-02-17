@@ -136,17 +136,13 @@ header {
 .login-btn, .sign-up-btn {
     padding:10px;
     border-radius: 12px;
-    border: 2px solid rgb(205, 250, 250);
+    border: 3px solid black;
     background-color: rgb(200, 155, 60);
     box-shadow: 10px 5px 5px black;
-    color: rgb(205, 250, 250);
+    color: black;
     font-family: 'Raleway';
     font-weight: bold;
 }
 
 
 /* End Login page css */
-
-.testText {
-    color: white;
-
