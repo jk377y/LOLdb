@@ -3,6 +3,21 @@ const User = require('../../models/User'); // Import the User model from the Use
 
 
 
+router.get('/', async (req, res) => {
+    try {
+        res.render('login', {
+
+        })
+    } catch (e) {
+        console.log(e);
+        res.status(500).json(e);
+    }
+});
+
+
+
+
+
 // CREATE new user
 router.post('/', async (req, res) => {// post() method to create a new user when the user visits the /api/users endpoint
     try {
