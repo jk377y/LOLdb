@@ -7,7 +7,7 @@ const seedAll = async () => {
       console.log('\n ===== DATABASE SYNCED =====\n');
 
       await seedChampions();
-      console.log('\n ===== CATEGORY SEEDED =====\n');
+      console.log('\n ===== CHAMPIONS SEEDED =====\n');
 
       process.exit(0);
   } catch (error) {
