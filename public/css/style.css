@@ -47,6 +47,23 @@ main {
 }
 header {
     height: auto;
+    /* display: flex;
+    justify-content: space-between;
+    align-items: end; */
+}
+.navLinks {
+    text-decoration: none;
+    margin-left: 20px;
+    list-style: none;
+    color: rgba(200, 156, 60, 0.72);
+    font-size: 1vw;
+}
+.navLinks a:link, .navLinks a:visited {
+    text-decoration: none;
+    color: rgba(200, 156, 60, 0.72);
+}
+.navLinks a:hover {
+    color: rgb(200, 156, 60);
 }
 .titleImage {
     width: 33%;
