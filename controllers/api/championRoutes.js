@@ -1,15 +1,19 @@
-const router = require('express').Router();// Import the express package and use the Router() method to create a new router object
-const Champion = require('../../models/champion');// Import the Champion model from the models/Champion.js file
+const router = require('express').Router();
+const Champion = require('../../models/champion');
 
 
 router.get('/', async (req, res) => {
     try {
-        res.render('allChampions', {
-        })
-    } catch (e) {
-        console.log(e);
-        res.status(500).json(e);
+        const championData = await Champion.findAll({
+
+        });
+        const champions = championData.map((champion) => champion.get({ plain: true }));
+        res.render('allChampions', { champions } );
+    } catch (err) {
+        res.status(500).json(err);
     }
 });
 
-module.exports = router;// Export the router object to be used in the server.js file
+
+
+module.exports = router;

@@ -26,6 +26,10 @@ Champion.init(
             type: DataTypes.JSON,
             allowNull: false,
         },
+        mainPic: {
+            type: DataTypes.STRING,
+            allowNull: false
+        },
         passiveName: {
             type: DataTypes.STRING,
             allowNull: false
