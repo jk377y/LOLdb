@@ -8,228 +8,227 @@ const championData = [
         lore: "Aatrox is a legendary warrior whose rage consumes him as mercilessly as the fires of his homeland. He wields his massive blade with deadly grace, slicing through legions of enemies to carve a path to his true destiny. But the blade that once brought hope and salvation to his war-torn people now threatens to destroy everything he holds dear.",
         skins: [0, 1, 2, 3, 7, 8, 9, 11, 20, 21],
         passive: {
-            passiveName: "Deathbringer Stance",
-            passiveDescription: "Periodically, Aatrox's next basic attack deals bonus <physicalDamage>physical damage</physicalDamage> and heals him, based on the target's max health.",
-            passiveImage: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/passive/Aatrox_Passive.png",
+          name: "Deathbringer Stance",
+          description: "Periodically, Aatrox"s next basic attack deals bonus physical damage and heals him, based on the target"s max health.",
+          image: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/passive/Aatrox_Passive.png",
         },
-
-        spells: {
-            [0]: {
-                spellId: "AatroxQ",
-                spellName: "The Darkin Blade",
-                spellDescription: "Aatrox slams his greatsword down, dealing physical damage. He can swing three times, each with a different area of effect.",
-                spellImage: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/spell/AatroxQ.png",
-            },
-            [1]: {
-                spellId: "AatroxW",
-                spellName: "Infernal Chains",
-                spellDescription: "Aatrox smashes the ground, dealing damage to the first enemy hit. Champions and large monsters have to leave the impact area quickly or they will be dragged to the center and take the damage again.",
-                spellImage: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/spell/AatroxW.png",
-            },
-            [2]: {
-                spellId: "AatroxE",
-                spellName: "Umbral Dash",
-                spellDescription: "Passively, Aatrox heals when damaging enemy champions. On activation, he dashes in a direction.",
-                spellImage: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/spell/AatroxE.png",
-            },
-            [3]: {
-                spellId: "AatroxR",
-                spellName: "World Ender",
-                spellDescription: "Aatrox unleashes his demonic form, fearing nearby enemy minions and gaining attack damage, increased healing, and Move Speed. If he gets a takedown, this effect is extended.",
-                spellImage: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/spell/AatroxR.png",
-            },
-        },
-    },
-    {
+        spells: [
+          {
+            id: "AatroxQ",
+            name: "The Darkin Blade",
+            description: "Aatrox slams his greatsword down, dealing physical damage. He can swing three times, each with a different area of effect.",
+            image: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/spell/AatroxQ.png",
+          },
+          {
+            id: "AatroxW",
+            name: "Infernal Chains",
+            description: "Aatrox smashes the ground, dealing damage to the first enemy hit. Champions and large monsters have to leave the impact area quickly or they will be dragged to the center and take the damage again.",
+            image: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/spell/AatroxW.png",
+          },
+          {
+            id: "AatroxE",
+            name: "Umbral Dash",
+            description: "Passively, Aatrox heals when damaging enemy champions. On activation, he dashes in a direction.",
+            image: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/spell/AatroxE.png",
+          },
+          {
+            id: "AatroxR",
+            name: "World Ender",
+            description: "Aatrox unleashes his demonic form, fearing nearby enemy minions and gaining attack damage, increased healing, and Move Speed. If he gets a takedown, this effect is extended.",
+            image: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/spell/AatroxR.png",
+          }
+        ]
+      },
+      {
         id: "Ahri",
         name: "Ahri",
         title: "the Nine-Tailed Fox",
-        lore: "Innately connected to the latent power of Runeterra, Ahri is a vastaya who can reshape magic into orbs of raw energy. She revels in toying with her prey by manipulating their emotions before devouring their life essence. Despite her predatory nature, Ahri retains a sense of empathy as she receives flashes of memory from each soul she consumes.",
-        skins: [0, 1, 2, 3, 4, 5, 6, 7, 10, 13, 14, 15, 16, 17, 18, 21],
+        lore: "Innately connected to the latent power of Runeterra, Ahri is a vastayan enchantress capable of manipulating magic to charm, seduce, and control the minds of her enemies. She is a fox spirit, also called a kitsune, who can morph into a human-like appearance, using her beauty to deceive mortals. She uses her abilities to feed on the life essence of men and make them fall for her before consuming their vitality.",
+        skins: [0, 1, 2, 3, 4, 5, 6, 7, 10, 11, 12, 13, 14, 15, 16, 17, 18],
         passive: {
-            passiveName: "Vastayan Grace",
-            passiveDescription: "Ahri gains a brief burst of movement speed and releases three fox-fires, that lock onto and attack nearby enemies.",
-            passiveImage: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/passive/Ahri_P.png",
+          name: "Vastayan Grace",
+          description: "Ahri gains a brief burst of movement speed and her next spell has bonus magic damage and will heal her for a portion of the damage dealt.",
+          image: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/passive/Ahri_SoulEater.png",
         },
-        spells: {
-            [0]: {
-                spellId: "AhriOrbofDeception",
-                spellName: "Orb of Deception",
-                spellDescription: "Ahri sends out and pulls back her orb, dealing magic damage on the way out and true damage on the way back.",
-                spellImage: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/spell/AhriOrbofDeception.png",
-            },
-            [1]: {
-                spellId: "AhriFoxFire",
-                spellName: "Fox-Fire",
-                spellDescription: "Ahri releases three fox-fires, that lock onto and attack nearby enemies.",
-                spellImage: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/spell/AhriFoxFire.png",
-            },
-            [2]: {
-                spellId: "AhriSeduce",
-                spellName: "Charm",
-                spellDescription: "Ahri blows a kiss that damages and charms an enemy it encounters, causing them to walk harmlessly towards her.",
-                spellImage: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/spell/AhriSeduce.png",
-            },
-            [3]: {
-                spellId: "AhriTumble",
-                spellName: "Spirit Rush",
-                spellDescription: "Ahri dashes forward and fires essence bolts, damaging nearby enemies. Spirit Rush can be cast up to three times before going on cooldown.",
-                spellImage: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/spell/AhriTumble.png",
-            }
-        }
-    },
-    {
+        spells: [
+          {
+            id: "AhriOrbofDeception",
+            name: "Orb of Deception",
+            description: "Ahri sends out and pulls back her orb, dealing magic damage on the way out and true damage on the way back.",
+            image: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/spell/AhriOrbofDeception.png",
+          },
+          {
+            id: "AhriFoxFire",
+            name: "Fox-Fire",
+            description: "Ahri releases three fox-fires, that lock on and attack nearby enemies.",
+            image: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/spell/AhriFoxFire.png",
+          },
+          {
+            id: "AhriSeduce",
+            name: "Charm",
+            description: "Ahri blows a kiss that damages and charms an enemy it encounters, causing them to walk harmlessly towards her.",
+            image: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/spell/AhriSeduce.png",
+          },
+          {
+            id: "AhriTumble",
+            name: "Spirit Rush",
+            description: "Ahri dashes forward and fires essence bolts, damaging 3 nearby enemies (prioritizes champions) and granting her increased movement speed.",
+            image: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/spell/AhriTumble.png",
+          }
+        ]
+      },
+      {
         id: "Akali",
         name: "Akali",
         title: "the Rogue Assassin",
         lore: "Abandoning the Kinkou Order and her title of the Fist of Shadow, Akali now strikes alone, ready to be the deadly weapon her people need. Though she holds onto all she learned from her master Shen, she has pledged to defend Ionia from its enemies, one kill at a time. Akali may strike in silence, but her message will be heard loud and clear: fear the assassin with no master.",
-        skins: [0, 1, 2, 3, 5, 6, 7, 11, 12, 13, 14, 15, 16, 17, 18],
+        skins: [0, 1, 2, 3, 4, 5, 6, 7, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19],
         passive: {
-            passiveName: "Assassin's Mark",
-            passiveDescription: "Akali's damaging abilities create a circular marking on the enemy that lasts for a few seconds. Akali's next basic attack against a marked target will have increased range and damage.",
-            passiveImage: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/passive/Akali_P.png",
+          name: "Assassin's Mark",
+          description: "Akali's damaging abilities mark enemies with 'Assassin's Mark'. Akali's melee attacks against marked enemies will trigger a bonus magic damage and restore energy.",
+          image: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/passive/Akali_P.png",
         },
-        spells: {
-            [0]: {
-                spellId: "AkaliQ",
-                spellName: "Five Point Strike",
-                spellDescription: "Akali throws a flurry of kunais in front of her, dealing damage to all enemies hit.",
-                spellImage: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/spell/AkaliQ.png",
-            },
-            [1]: {
-                spellId: "AkaliW",
-                spellName: "Twilight Shroud",
-                spellDescription: "Akali drops a smoke bomb and disappears into a shroud of twilight, becoming invisible and gaining movement speed.",
-                spellImage: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/spell/AkaliW.png",
-            },
-            [2]: {
-                spellId: "AkaliE",
-                spellName: "Shuriken Flip",
-                spellDescription: "Akali flips backward and fires a shuriken forward, dealing damage to enemies hit. The flip can be re-cast to land at the shuriken's location.",
-                spellImage: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/spell/AkaliE.png",
-            },
-            [3]: {
-                spellId: "AkaliR",
-                spellName: "Perfect Execution",
-                spellDescription: "Akali dashes in a direction and fires a shuriken forward, dealing damage to the first enemy hit. Akali can recast the ability to dash again in a different direction within a short time window. At the end of the dash, she strikes all nearby enemies, dealing additional damage.",
-                spellImage: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/spell/AkaliR.png",
-            }
-        }
-    },
-    {
+        spells: [
+          {
+            id: "AkaliQ",
+            name: "Five Point Strike",
+            description: "Akali flourishes her kamas, dealing damage based on her bonus Attack Damage and Ability Power.",
+            image: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/spell/AkaliQ.png",
+          },
+          {
+            id: "AkaliW",
+            name: "Twilight Shroud",
+            description: "Akali creates a shroud of twilight, gaining invisibility and movement speed. Attacking or using abilities will briefly reveal her. Enemies inside the shroud are slowed.",
+            image: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/spell/AkaliW.png",
+          },
+          {
+            id: "AkaliE",
+            name: "Shuriken Flip",
+            description: "Akali flips backward and fires a shuriken forward, dealing physical damage.",
+            image: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/spell/AkaliE.png",
+          },
+          {
+            id: "AkaliR",
+            name: "Perfect Execution",
+            description: "Akali dashes forward and lands two damaging strikes on her target. The first strike deals physical damage and the second strike deals magic damage. Enemies killed by Perfect Execution will restore the full cost of the ability and reduce its cooldown.",
+            image: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/spell/AkaliR.png",
+          }
+        ]
+      },
+      {
         id: "Alistar",
         name: "Alistar",
         title: "the Minotaur",
-        lore: "As the mightiest warrior to ever emerge from the Minotaur tribes of the Great Barrier, Alistar defended his tribe from Valoran's many dangers; that is, until the coming of the Noxian army. Alistar was lured from his village by the machinations of Keiran Darkwill, General Boram Darkwill's youngest son, and was captured and enslaved. Bitter and angry, Alistar's once noble spirit was broken and he became a crazed warrior, driven by nothing but hate.",
-        skins: [0, 1, 2, 3, 4, 5, 6, 9, 10, 12, 14, 15, 16, 20, 21],
+        lore: "As the mightiest warrior to ever emerge from the Minotaur tribes of the Great Barrier, Alistar defended his tribe from Valoran's many dangers; that is, until the coming of the Noxian army. Alistar was lured from his village by the machinations of Keiran Darkwill, General Boram Darkwill's youngest son, and was imprisoned, tried, and convicted of the crime of being a demigod. With his horns hacked off and his rage suppressed, Alistar spent the intervening years as a slave, rising to become the prized enforcer of Noxus's high command. Now, with Valoran in turmoil, Alistar seeks freedom for himself, and for his enslaved brethren.",
+        skins: [0, 1, 2, 3, 4, 5, 6, 7, 8, 10, 12],
         passive: {
-            passiveName: "Triumphant Roar",
-            passiveDescription: "Alistar heals himself by 20 every time he stuns an enemy.",
-            passiveImage: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/passive/Alistar_E.png",
+          passiveName: "Triumphant Roar",
+          passiveDescription: "Whenever Alistar casts a spell, nearby allies heal over time.",
+          passiveImage: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/passive/Alistar_E.png",
         },
         spells: {
-            [0]: {
-                spellId: "Pulverize",
-                spellName: "Pulverize",
-                spellDescription: "Alistar smashes the ground beneath him, dealing damage to nearby enemies and tossing them into the air.",
-                spellImage: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/spell/Pulverize.png",
-            },
-            [1]: {
-                spellId: "Headbutt",
-                spellName: "Headbutt",
-                spellDescription: "Alistar charges at an enemy and rams them with his head, dealing damage and knocking them back.",
-                spellImage: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/spell/Headbutt.png",
-            },
-            [2]: {
-                spellId: "Trample",
-                spellName: "Trample",
-                spellDescription: "Alistar tramples nearby enemy units, ignoring unit collision and dealing damage each second for a few seconds.",
-                spellImage: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/spell/Trample.png",
-            },
-            [3]: {
-                spellId: "FerociousHowl",
-                spellName: "Unbreakable Will",
-                spellDescription: "Alistar lets out a wild roar, removing all crowd control effects on himself and reducing incoming physical and magical damage for a few seconds.",
-                spellImage: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/spell/FerociousHowl.png",
-            }
-        }
-    },
-    {
+          0: {
+            spellId: "Pulverize",
+            spellName: "Pulverize",
+            spellDescription: "Alistar smashes the ground, dealing damage to nearby enemies and knocking them up.",
+            spellImage: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/spell/AlistarQ.png",
+          },
+          1: {
+            spellId: "Headbutt",
+            spellName: "Headbutt",
+            spellDescription: "Alistar charges at an enemy and rams them with his head, dealing damage and knocking them back.",
+            spellImage: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/spell/AlistarW.png",
+          },
+          2: {
+            spellId: "Trample",
+            spellName: "Trample",
+            spellDescription: "Alistar tramples nearby enemies, dealing damage and stunning them if they are affected by his Trample passive.",
+            spellImage: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/spell/AlistarE.png",
+          },
+          3: {
+            spellId: "FerociousHowl",
+            spellName: "Unbreakable Will",
+            spellDescription: "Alistar lets out a mighty roar, gaining damage reduction for a short time.",
+            spellImage: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/spell/AlistarR.png",
+          }
+        },
+      },
+      {
         id: "Amumu",
         name: "Amumu",
         title: "the Sad Mummy",
         lore: "Legend claims that Amumu is a lonely and melancholy soul from ancient Shurima, roaming the world in search of a friend. Doomed by an ancient curse to remain alone forever, his touch is death, his affection ruin. Those who claim to have seen him describe a living cadaver, small in stature and wrapped in creeping bandages. Amumu has inspired myths, songs, and folklore told and retold for generations—such that it is impossible to separate truth from fiction.",
-        skins: [0, 1, 2, 3, 4, 5, 6, 10, 11, 12, 13, 14, 15, 16, 20, 21],
+        skins: [0, 1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12, 13],
         passive: {
-            passiveName: "Cursed Touch",
-            passiveDescription: "Amumu's basic attacks and his ult Curse of the Sad Mummy deal bonus magic damage to enemies that stand within his aura.",
-            passiveImage: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/passive/Amumu_P.png",
+          passiveName: "Cursed Touch",
+          passiveDescription: "Amumu's basic attacks curse his target, causing them to take bonus true damage from incoming magic damage.",
+          passiveImage: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/passive/Amumu_P.png",
         },
         spells: {
-            [0]: {
-                spellId: "BandageToss",
-                spellName: "Bandage Toss",
-                spellDescription: "Amumu tosses a bandage at a target, stunning and damaging the first enemy he hits.",
-                spellImage: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/spell/BandageToss.png",
-            },
-            [1]: {
-                spellId: "Despair",
-                spellName: "Despair",
-                spellDescription: "Amumu cries, dealing damage to nearby enemies and reducing their magic resistance.",
-                spellImage: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/spell/Despair.png",
-            },
-            [2]: {
-                spellId: "Tantrum",
-                spellName: "Tantrum",
-                spellDescription: "Amumu passively takes reduced physical damage. When activated, he deals damage to surrounding enemies and reduces their attack speed.",
-                spellImage: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/spell/Tantrum.png",
-            },
-            [3]: {
-                spellId: "CurseoftheSadMummy",
-                spellName: "Curse of the Sad Mummy",
-                spellDescription: "Amumu entangles surrounding enemy units, dealing damage and rendering them unable to attack or move for a few seconds.",
-                spellImage: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/spell/CurseoftheSadMummy.png",
-            }
-        }
-    },
-    {
+          0: {
+            spellId: "BandageToss",
+            spellName: "Bandage Toss",
+            spellDescription: "Amumu tosses a bandage, damaging and stunning the first enemy he hits.",
+            spellImage: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/spell/AmumuQ.png",
+          },
+          1: {
+            spellId: "Despair",
+            spellName: "Despair",
+            spellDescription: "Amumu cries, dealing damage to nearby enemies and applying his Curse to them.",
+            spellImage: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/spell/AmumuW.png",
+          },
+          2: {
+            spellId: "Tantrum",
+            spellName: "Tantrum",
+            spellDescription: "Amumu takes reduced damage from physical attacks and deals damage to nearby enemies each time he is hit.",
+            spellImage: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/spell/AmumuE.png",
+          },
+          3: {
+            spellId: "CurseoftheSadMummy",
+            spellName: "Curse of the Sad Mummy",
+            spellDescription: "Amumu entangles nearby enemies, dealing damage and rendering them unable to attack or move.",
+            spellImage: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/spell/AmumuR.png",
+          }
+        },
+      },      
+      {
         id: "Anivia",
         name: "Anivia",
         title: "the Cryophoenix",
         lore: "Anivia is a benevolent winged spirit who endures endless cycles of life, death, and rebirth to protect the Freljord. A demigod born of unforgiving ice and bitter winds, she wields those elemental powers to thwart any who dare disturb her homeland. Anivia guides and protects the tribes of the harsh north, who revere her as a symbol of hope, and a portent of great change. She fights with every ounce of her being, knowing that through her sacrifice, her memory will endure, and she will be reborn into a new tomorrow.",
-        skins: [0, 1, 2, 3, 4, 5, 6, 7, 8, 12, 13, 14],
+        skins: [0, 1, 2, 3, 4, 5, 6, 7, 8],
         passive: {
-            passiveName: "Rebirth",
-            passiveDescription: "Upon taking fatal damage, Anivia transforms into an egg. If the egg can survive for six seconds, she is gloriously reborn.",
-            passiveImage: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/passive/Anivia_P.png",
+          passiveName: "Rebirth",
+          passiveDescription: "Upon dying, Anivia will revert into an egg. If the egg can survive for six seconds, she is gloriously reborn.",
+          passiveImage: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/passive/Anivia_P.png",
         },
         spells: {
-            [0]: {
-                spellId: "FlashFrost",
-                spellName: "Flash Frost",
-                spellDescription: "Anivia launches a ball of ice that explodes on contact with an enemy, stunning them and damaging nearby enemies.",
-                spellImage: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/spell/FlashFrost.png",
-            },
-            [1]: {
-                spellId: "Crystallize",
-                spellName: "Crystallize",
-                spellDescription: "Anivia summons an impassable wall of ice to block the movement of her enemies.",
-                spellImage: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/spell/Crystallize.png",
-            },
-            [2]: {
-                spellId: "Frostbite",
-                spellName: "Frostbite",
-                spellDescription: "Anivia blasts her target with a freezing wind, dealing damage and applying a frostbite effect that amplifies damage from her next spell or attack.",
-                spellImage: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/spell/Frostbite.png",
-            },
-            [3]: {
-                spellId: "GlacialStorm",
-                spellName: "Glacial Storm",
-                spellDescription: "Anivia summons a fierce blizzard that deals damage to all enemies in the area and chills them, slowing their movement speed.",
-                spellImage: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/spell/GlacialStorm.png",
-            }
-        }
-    },
+          0: {
+            spellId: "FlashFrost",
+            spellName: "Flash Frost",
+            spellDescription: "Anivia launches a ball of ice that explodes when it hits an enemy, dealing damage and briefly stunning anyone in the area.",
+            spellImage: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/spell/FlashFrost.png",
+          },
+          1: {
+            spellId: "Crystallize",
+            spellName: "Crystallize",
+            spellDescription: "Anivia condenses the moisture in the air into an impenetrable wall of ice to block movement.",
+            spellImage: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/spell/Crystallize.png",
+          },
+          2: {
+            spellId: "Frostbite",
+            spellName: "Frostbite",
+            spellDescription: "Anivia blasts her target with a freezing wind, dealing damage and applying a debuff that increases the damage they take from all sources.",
+            spellImage: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/spell/Frostbite.png",
+          },
+          3: {
+            spellId: "GlacialStorm",
+            spellName: "Glacial Storm",
+            spellDescription: "Anivia creates a blizzard around her that deals damage to enemies and chills them, slowing their movement and attack speed.",
+            spellImage: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/spell/GlacialStorm.png",
+          }
+        },
+      },      
     {
         id: "Annie",
         name: "Annie",
@@ -238,7 +237,7 @@ const championData = [
         skins: [0, 1, 2, 3, 4, 5, 6, 10, 11, 12, 13, 14, 15, 17, 18, 19, 21, 22],
         passive: {
             passiveName: "Pyromania",
-            passiveDescription: "After casting 4 spells, Annie's next offensive spell will stun its target.",
+            passiveDescription: "After casting 4 spells, Annie"s next offensive spell will stun its target.",
             passiveImage: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/passive/Annie_P.png",
         },
         spells: {
@@ -272,7 +271,7 @@ const championData = [
         id: "Aphelios",
         name: "Aphelios",
         title: "the Weapon of the Faithful",
-        lore: "Emerging from moonlight's shadow with weapons of nuanced precision, Aphelios kills the enemies of his faith in brooding silence—speaking only through the certainty of his aim, and the firing of each gun. Though fueled by a poison that renders him mute, he is guided by his sister Alune. And their bond is unbreakable. They are lethal protectors of the celestial faith, combating any who threaten it with merciless force.",
+        lore: "Emerging from moonlight"s shadow with weapons of nuanced precision, Aphelios kills the enemies of his faith in brooding silence—speaking only through the certainty of his aim, and the firing of each gun. Though fueled by a poison that renders him mute, he is guided by his sister Alune. And their bond is unbreakable. They are lethal protectors of the celestial faith, combating any who threaten it with merciless force.",
         skins: [0, 1, 2],
         passive: {
             passiveName: "The Hitman and the Seer",
@@ -314,13 +313,13 @@ const championData = [
         skins: [0, 1, 2, 3, 4, 5, 6, 7, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19],
         passive: {
             passiveName: "Frost Shot",
-            passiveDescription: "Ashe's basic attacks slow her targets, causing her to deal increased damage to them.",
+            passiveDescription: "Ashe"s basic attacks slow her targets, causing her to deal increased damage to them.",
             passiveImage: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/passive/Ashe_P.png",
         },
         spells: {
             [0]: {
                 spellId: "AsheQ",
-                spellName: "Ranger's Focus",
+                spellName: "Ranger"s Focus",
                 spellDescription: "Ashe gains bonus attack speed and deals increased damage on her next attack, based on how long she spent focusing.",
                 spellImage: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/spell/AsheQ.png",
             },
@@ -352,7 +351,7 @@ const championData = [
         skins: [0, 1, 2],
         passive: {
             passiveName: "Center of the Universe",
-            passiveDescription: "Aurelion Sol's stars deal damage to enemies as they orbit him. He can also travel faster and further by flying alongside his stars.",
+            passiveDescription: "Aurelion Sol"s stars deal damage to enemies as they orbit him. He can also travel faster and further by flying alongside his stars.",
             passiveImage: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/passive/AurelionSol_P.png",
         },
         spells: {
@@ -389,8 +388,8 @@ const championData = [
         lore: "Azir was a mortal emperor of Shurima in a far distant age, a proud man who stood at the cusp of immortality. His hubris saw him betrayed and murdered at the moment of his greatest triumph, but now, millennia later, he has been reborn as an Ascended being of immense power. With his buried city risen from the sand, Azir seeks to restore Shurima to its former glory.",
         skins: [0, 1, 2, 3, 4, 5, 6],
         passive: {
-            passiveName: "Shurima's Legacy",
-            passiveDescription: "Azir can summon a Sand Soldier by placing a point within range of an enemy unit. Azir's basic attacks deal bonus magic damage to targets in front of him if he has a Sand Soldier summoned. Sand Soldiers attack with Azir, dealing magic damage to enemies in a line.",
+            passiveName: "Shurima"s Legacy",
+            passiveDescription: "Azir can summon a Sand Soldier by placing a point within range of an enemy unit. Azir"s basic attacks deal bonus magic damage to targets in front of him if he has a Sand Soldier summoned. Sand Soldiers attack with Azir, dealing magic damage to enemies in a line.",
             passiveImage: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/passive/Azir_P.png",
         },
         spells: {
@@ -414,7 +413,7 @@ const championData = [
             },
             [3]: {
                 spellId: "AzirR",
-                spellName: "Emperor's Divide",
+                spellName: "Emperor"s Divide",
                 spellDescription: "Azir summons a wall of soldiers that march forward, knocking back and damaging enemies. The soldiers then remain as a wall, blocking movement and projectiles.",
                 spellImage: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/spell/AzirR.png",
             }
@@ -424,11 +423,11 @@ const championData = [
         id: "Bard",
         name: "Bard",
         title: "the Wandering Caretaker",
-        lore: "Bard travels through realms beyond the imagination of mortal beings. Some of Valoran's greatest scholars have spent their lives trying to understand the mysteries he embodies. This enigmatic spirit has been given many names throughout the history of Valoran, but titles such as Cosmic Vagabond and Great Caretaker only capture a fleeting aspect of his true purpose. When the unknowable structure of the universe is threatened, Bard steers all existence away from utter annihilation.",
+        lore: "Bard travels through realms beyond the imagination of mortal beings. Some of Valoran"s greatest scholars have spent their lives trying to understand the mysteries he embodies. This enigmatic spirit has been given many names throughout the history of Valoran, but titles such as Cosmic Vagabond and Great Caretaker only capture a fleeting aspect of his true purpose. When the unknowable structure of the universe is threatened, Bard steers all existence away from utter annihilation.",
         skins: [0, 1, 2, 3, 4, 5, 6],
         passive: {
-            passiveName: "Traveler's Call",
-            passiveDescription: "Bard periodically spawns a chime on the map, which can be collected by him or his allies to gain experience, mana, and a burst of speed. Additionally, Bard's basic attacks deal bonus magic damage.",
+            passiveName: "Traveler"s Call",
+            passiveDescription: "Bard periodically spawns a chime on the map, which can be collected by him or his allies to gain experience, mana, and a burst of speed. Additionally, Bard"s basic attacks deal bonus magic damage.",
             passiveImage: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/passive/Bard_P.png",
         },
         spells: {
@@ -440,7 +439,7 @@ const championData = [
             },
             [1]: {
                 spellId: "BardW",
-                spellName: "Caretaker's Shrine",
+                spellName: "Caretaker"s Shrine",
                 spellDescription: "Bard creates a shrine that gradually restores health and mana to allied champions that walk over it. The shrine will decay after a few seconds, lasting longer if Bard remains near it.",
                 spellImage: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/spell/BardW.png",
             },
@@ -466,7 +465,7 @@ const championData = [
         skins: [0, 1, 2, 3, 4, 5, 6, 7, 10, 11, 12, 13, 14, 15, 16, 17, 20],
         passive: {
             passiveName: "Mana Barrier",
-            passiveDescription: "When Blitzcrank's life is brought below 30%, he creates a mana shield equal to 50% of his maximum mana for 10 seconds. The shield decays rapidly and cannot be reapplied for 90 seconds.",
+            passiveDescription: "When Blitzcrank"s life is brought below 30%, he creates a mana shield equal to 50% of his maximum mana for 10 seconds. The shield decays rapidly and cannot be reapplied for 90 seconds.",
             passiveImage: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/passive/Blitzcrank_Passive.png",
         },
         spells: {
@@ -504,7 +503,7 @@ const championData = [
         skins: [0, 1, 2, 3, 4, 5, 6, 9, 10],
         passive: {
             passiveName: "Blaze",
-            passiveDescription: "Brand's spells light his targets ablaze, dealing a percentage of their maximum health as magic damage over 4 seconds, and granting Brand bonus movement speed towards them.",
+            passiveDescription: "Brand"s spells light his targets ablaze, dealing a percentage of their maximum health as magic damage over 4 seconds, and granting Brand bonus movement speed towards them.",
             passiveImage: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/passive/Brand_Passive.png",
         },
         spells: {
@@ -542,14 +541,14 @@ const championData = [
         skins: [0, 1, 2, 3, 4, 5, 6, 8, 12],
         passive: {
             passiveName: "Concussive Blows",
-            passiveDescription: "Braum's basic attacks apply Concussive Blows to his target, stacking up to four times. Once the first stack is applied, any allied champion's basic attack on the target generates an additional stack, and at four stacks the target is stunned and takes magic damage.",
+            passiveDescription: "Braum"s basic attacks apply Concussive Blows to his target, stacking up to four times. Once the first stack is applied, any allied champion"s basic attack on the target generates an additional stack, and at four stacks the target is stunned and takes magic damage.",
             passiveImage: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/passive/Braum_Passive.png",
         },
         spells: {
             [0]: {
                 spellId: "BraumQ",
-                spellName: "Winter's Bite",
-                spellDescription: "Braum propels freezing ice from his shield, slowing and dealing magic damage to the first enemy hit. Winter's Bite applies a stack of Concussive Blows and briefly stuns the target if they already have four stacks.",
+                spellName: "Winter"s Bite",
+                spellDescription: "Braum propels freezing ice from his shield, slowing and dealing magic damage to the first enemy hit. Winter"s Bite applies a stack of Concussive Blows and briefly stuns the target if they already have four stacks.",
                 spellImage: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/spell/BraumQ.png",
             },
             [1]: {
@@ -561,7 +560,7 @@ const championData = [
             [2]: {
                 spellId: "BraumE",
                 spellName: "Unbreakable",
-                spellDescription: "Braum raises his shield, creating a barrier that absorbs incoming damage for a short duration. The first instance of damage blocked by the shield is negated entirely. While the shield is raised, Braum's basic attacks apply Concussive Blows and his allies' basic attacks apply additional stacks.",
+                spellDescription: "Braum raises his shield, creating a barrier that absorbs incoming damage for a short duration. The first instance of damage blocked by the shield is negated entirely. While the shield is raised, Braum"s basic attacks apply Concussive Blows and his allies" basic attacks apply additional stacks.",
                 spellImage: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/spell/BraumE.png",
             },
             [3]: {
@@ -576,11 +575,11 @@ const championData = [
         id: "Caitlyn",
         name: "Caitlyn",
         title: "theSheriff of Piltover",
-        lore: "Renowned as its finest peacekeeper, Caitlyn is also Piltover's best shot at ridding the city of its elusive criminal elements. She is a patient hunter and a clever trap-setter, and one of the few truly good people in a city that tends to treat everything as a business transaction. Her steadfast refusal to compromise her ideals has made her a symbol of hope and security for her fellow citizens, despite the chaos that grips the world.",
+        lore: "Renowned as its finest peacekeeper, Caitlyn is also Piltover"s best shot at ridding the city of its elusive criminal elements. She is a patient hunter and a clever trap-setter, and one of the few truly good people in a city that tends to treat everything as a business transaction. Her steadfast refusal to compromise her ideals has made her a symbol of hope and security for her fellow citizens, despite the chaos that grips the world.",
         skins: [0, 1, 2, 3, 4, 5, 6, 8, 10, 12, 13],
         passive: {
             passiveName: "Headshot",
-            passiveDescription: "Caitlyn's basic attacks and Ace in the Hole apply Headshot to champions and deal bonus damage. When Caitlyn lands a critical hit, she instead gains an amount of bonus attack speed for a short duration.",
+            passiveDescription: "Caitlyn"s basic attacks and Ace in the Hole apply Headshot to champions and deal bonus damage. When Caitlyn lands a critical hit, she instead gains an amount of bonus attack speed for a short duration.",
             passiveImage: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/passive/Caitlyn_Headshot.png",
         },
         spells: {
@@ -618,14 +617,14 @@ const championData = [
         skins: [0, 1, 2, 3, 4, 5],
         passive: {
             passiveName: "Adaptive Defenses",
-            passiveDescription: "Camille's basic attacks on champions grant a shield based on her maximum health. This shield lasts until it is broken.",
+            passiveDescription: "Camille"s basic attacks on champions grant a shield based on her maximum health. This shield lasts until it is broken.",
             passiveImage: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/passive/Camille_Passive.png",
         },
         spells: {
             [0]: {
                 spellId: "CamilleQ",
                 spellName: "Precision Protocol",
-                spellDescription: "Camille's next basic attack deals bonus physical damage and grants bonus movement speed. This spell can be recast within a short period of time to deal extra damage and slow the target.",
+                spellDescription: "Camille"s next basic attack deals bonus physical damage and grants bonus movement speed. This spell can be recast within a short period of time to deal extra damage and slow the target.",
                 spellImage: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/spell/CamilleQ.png",
             },
             [1]: {
@@ -643,7 +642,7 @@ const championData = [
             [3]: {
                 spellId: "CamilleR",
                 spellName: "The Hextech Ultimatum",
-                spellDescription: "Camille dashes to target champion, becoming untargetable and leaps into the air with them, knocking away all other champions in an area around them. For a duration, the target champion can't leave the area around Camille. Camille's basic attacks deal bonus magic damage to the target.",
+                spellDescription: "Camille dashes to target champion, becoming untargetable and leaps into the air with them, knocking away all other champions in an area around them. For a duration, the target champion can"t leave the area around Camille. Camille"s basic attacks deal bonus magic damage to the target.",
                 spellImage: "https://ddragon.leagueoflegends.com/cdn/13.3.1/img/spell/CamilleR.png",
             }
         }
@@ -657,9 +656,9 @@ const championData = [
 async function seedChampions() {
 	try {
 		await Champion.bulkCreate(championData);
-		console.log('Seed data for Champion table inserted successfully.');
+		console.log("Seed data for Champion table inserted successfully.");
 	} catch (error) {
-		console.error('Error seeding data for Champion table:', error);
+		console.error("Error seeding data for Champion table:", error);
 	}
 }
 module.exports = seedChampions;
