@@ -1,4 +1,16 @@
 const router = require('express').Router(); // Import the express package and use the Router() method to create a new router object
+const championRoutes = require('./championRoutes');
+const userRoutes = require('./userRoutes');
+
+router.use('/champions', championRoutes); //  /api/champions
+router.use('/users', userRoutes); //  /api/users
+
+
+
+
+
+
+
 //! {{wasnt working here. works on index.js controllers}} const championRoutes = require('./championRoutes'); // Import the champion routes from the champion-routes.js file
 // const userRoutes = require('./userRoutes'); // Import the user routes from the user-routes.js file
 
