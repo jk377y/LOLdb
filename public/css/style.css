@@ -17,7 +17,7 @@ img, picture, video, canvas, svg {
     --white: white;
     --lolColor: linear-gradient(120deg, #c49e54, #a9813e, #dfd182, #caa959, #baa05b);
     --lolColor2: #2dfcfb;
-    --borderColor: rgba(5, 5, 5, 0.993);
+    --borderColor: rgba(5, 5, 5, 0.582);
     --bgColor: #0d1720;
     --windowColor: rgba(0, 0, 0, 0.459);
     --hover: rgb(255, 255, 0);
@@ -30,6 +30,7 @@ img, picture, video, canvas, svg {
 }
 
 body {
+    font-family: Friz Quadrata;
     height: 100vh;
     width: 100vw;
     line-height: 1;
@@ -45,20 +46,20 @@ main {
     justify-content: space-between;
 }
 header {
-    height: 10%;
+    height: auto;
 }
 .titleImage {
     width: 33%;
     max-width: 25rem;
 }
 .git {
-    color: rgb(200, 155, 60);
+    color: rgba(200, 156, 60, 0.72);
     font-size: 2.5vw;
     margin: 0 2.2vw;
     max-width: 25rem;
 }
 .git:hover {
-    color: rgb(200, 170, 110);
+    color: rgb(200, 156, 60);
 }
 
 .homepageDiv {
@@ -76,17 +77,51 @@ header {
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
+    margin-top: 100px;
 }
 
 /* css for champions page */
-#allChampions {
+.galleryContainer {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
 }
-.allChampions {
-    color: white;
+.galleryTitle {
+    background: linear-gradient(120deg, #c49e54, #a9813e, #dfd182, #caa959, #baa05b);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
     font-size: 2.5vw;
 }
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+}
+.gallery div {
+    margin: 3px;
+}
+.gallery div:hover {
+    z-index: 100;
+}
+.thumbnail {
+    height: 56px;
+    width: 56px;
+    opacity: 0.8;
+    box-shadow: 1px 1px 3px 1px;
+    border-radius: 10%;
+}
+.thumbnail:hover {
+    opacity: 1.0;
+    border: 2px solid var(--lolColor2);
+    border-radius: 50%;
+    transform:scale(1.75);
+}
+
+
+
 /* End of champions page */
 
 

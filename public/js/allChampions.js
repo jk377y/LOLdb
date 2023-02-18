@@ -1,4 +1,4 @@
-let leagueOfLegendsAPI = "https://ddragon.leagueoflegends.com/cdn/12.23.1/data/en_US/champion.json"
+let leagueOfLegendsAPI = "http://ddragon.leagueoflegends.com/cdn/13.3.1/data/en_US/champion.json"
 // grabbing object containing ALL champion data from api
 fetch(leagueOfLegendsAPI)
     .then(response => response.json())
@@ -22,10 +22,19 @@ fetch(leagueOfLegendsAPI)
                     title
                 }}
             } = data;
-            console.log(name, id);
-            document.querySelector('#fuck').textContent = name, id;
-            document.querySelector('#fuck1').textContent = name, id;
-            document.querySelector('#fuck2').textContent = name, id;
+            const champDataDiv = document.createElement('div');
+            champDataDiv.setAttribute("id", id)
+            const gallery = document.querySelector('.gallery');
+            let fullImage = "https://ddragon.leagueoflegends.com/cdn/12.23.1/img/champion/" + id + ".png"
+            const imgEl = document.createElement('img');
+            imgEl.classList.add('thumbnail','thumbnail');
+            imgEl.src = fullImage;
+            imgEl.setAttribute('title', name)
+            champDataDiv.appendChild(imgEl);
+            gallery.appendChild(champDataDiv);
+            // this grabs the thumbnail image from the url using the id concatonated into the string value, then each thumbnail pic is added via appendChild method
+            
+
         }})
         // h1.textContent = data.data[4].name;
         
