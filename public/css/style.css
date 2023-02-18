@@ -25,6 +25,9 @@ img, picture, video, canvas, svg {
     --logintitle: rgb(205, 250, 250);
     --loginborder: rgb(200, 155, 60);
 }
+.testText {
+    color: white;
+}
 
 body {
     height: 100vh;
