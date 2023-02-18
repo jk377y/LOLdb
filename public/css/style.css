@@ -99,6 +99,7 @@ header {
     justify-content: center;
     flex-wrap: wrap;
     width: 80%;
+    margin-top: 20px;
 }
 .gallery div {
     margin: 3px;
