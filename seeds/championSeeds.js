@@ -9,7 +9,7 @@ const championData = [
 		skins: "0, 1, 2, 3, 7, 8, 9, 11, 20, 21",
 		mainPic: "http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Aatrox_0.jpg",
 		passiveName: "Deathbringer Stance",
-		passiveDescription: "Periodically, Aatrox's next basic attack deals bonus physical damage and heals him, based on the target's max health. ",
+		passiveDescription: "Periodically, Aatrox's next basic attack deals bonus physical damage and heals him, based on the target's max health.",
 		passiveImage: "http://ddragon.leagueoflegends.com/cdn/13.3.1/img/passive/Aatrox_Passive.png",
 		spells:
 			[
